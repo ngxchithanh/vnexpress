@@ -1,0 +1,245 @@
+// CSS HOMEPAGE
+.trangchu{
+    .container{
+        .newsTop{
+            padding-top: 20px;
+            display: flex;
+            .newsTop__left{
+                .newsTop__left-tinnoibat{
+                    display: grid;
+                    grid-template-columns: 500px 250px;
+                    .tinnoibat-img{
+                        min-width: 100%;
+                        min-height: 100%;
+                        object-fit: cover;
+                    }
+                    .tinnoibat__chitiet{
+                        background-color: #efeeee;
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        .tinnoibat__chitiet-tieude{
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: $black-cl;
+                            text-decoration: none;
+                        }
+                        .tinnoibat__chitiet-mota{
+                            padding-top: 10px;
+                            padding-bottom: 65px;
+                            font-size: 14px;
+                            color: $black-cl;
+                            line-height: 20px;
+                        }
+                        .tinnoibat__chitiet-danhmuc{
+                            font-size: 14px;
+                            color: $black-cl;
+                            text-decoration: none;
+                            &:hover{
+                                color: #562af3;
+                            }
+                        }
+                    }
+                }
+                .newsTop__left-tinkhac{
+                    display: grid;
+                    grid-template-columns: repeat(3,250px);
+                    padding-top: 20px;
+                    .tinkhac__item{
+                        display: flex;
+                        flex-direction: column;
+                        padding-right: 15px;
+                        &:last-child{
+                            padding-left: 20px;
+                            border-left: 1px solid #c1c1c1;
+                        }
+                    }
+                }
+            }
+        }
+        .newsDaily{
+            margin-top: 20px;
+            &::before{
+                content: '';
+                background-color: #c1c1c1;
+                height: 1px;
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+            .row{
+                .newsDaily__left{
+                    border-right: 1px solid #c1c1c1;
+                    .tinkhac__item{
+                        margin-bottom: 15px;
+                        border-bottom: 1px solid #c1c1c1;
+                        .mota{
+                            display: flex;
+                            margin-bottom: 10px;
+                            // @include overtext(3);
+                            img{
+                                height: 90px;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+                .newsDaily__right{
+                    .newsDaily_right-covid{
+                        .covid__phanloai{
+                            padding: 20px;
+                            border: 1px solid #c1c1c1;
+                            a{
+                                margin-right: 10px;
+                            }
+                            .phanloai{
+                                color: $black-cl;
+                                font-size: 14px;
+                                text-decoration: none;
+                                border: 1px solid #562af3;
+                                padding: 8px 15px;
+                                border-radius: 3px;
+                                &:hover{
+                                    background-color: #ececec;
+                                }
+                            }
+                        }
+                        .covid__thongke{
+                            padding: 20px;
+                            border-left: 1px solid #c1c1c1;
+                            border-right: 1px solid #c1c1c1;
+                            border-bottom: 1px solid #c1c1c1;
+                            .tieude{
+                                text-decoration: none;
+                                color: $black-cl;
+                                font-size: 18px;
+                                font-weight: bold;
+                            }
+                            .bangthongke{
+                                padding-top: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                a{
+                                    text-decoration: none;
+                                    color: $black-cl;
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                    padding: 10px 0;
+                                }
+                            }                            
+                        }
+                        .covid__capnhat{
+                            padding: 15px;
+                            span{
+                                color: $grey-cl;
+                                font-size: 14px;
+                            }
+                            a{
+                                color: #562af3;
+                                font-size: 14px;
+                                text-align: right;
+                                float: right;
+                                &:last-child{
+                                    padding-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .newsDaily__right-kinhdoanh{
+                        border-top: 1px solid #c1c1c1;
+                        padding-top: 15px;
+                        .kinhdoanh__tieude{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .tieude{
+                                font-size: 18px;
+                                font-weight: bold;
+                                &::after{
+                                    content: '';
+                                    background-color: $hover-text;
+                                    height: 1px;
+                                    width: 100%;
+                                    display: block;
+                                }
+                            }
+                            a{
+                                padding-right: 10px;
+                                color: $black-cl;
+                                font-size: 12px;
+                                text-decoration: none;
+                                &:hover{
+                                    color: $hover;
+                                }
+                            }
+                        }
+                        .kinhdoanh__news{
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                            display: flex;
+                            justify-content: space-between;
+                            .news{
+                                padding: 5px 0 0 10px;
+                                display: flex;
+                                flex-direction: column;
+                                .mota{
+                                    @include overtext(4);
+                                }
+                                a{
+                                    line-height: 23px;
+                                }
+                                &:last-child{
+                                    border-left: 1px solid #c1c1c1;
+                                }
+                            }
+                            img{
+                                min-width: 225px;
+                            }
+                        }
+                        .kinhdoanh__tieudekhac{
+                            border-top: 1px solid #c1c1c1;
+                            padding-top: 15px;
+                            display: flex;
+                            justify-content: space-between;
+                            .news{
+                                .tieude{
+                                    line-height: 22px;
+                                }
+                                &:first-child{
+                                    max-width: 225px;
+                                }
+                                &:last-child{
+                                    padding-left: 55px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.totop{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 40px;
+    z-index: 200;
+    background: $grey-cl;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 1;
+    transition: 0.3s;
+    &.active{
+        opacity: 1;
+        transition: 0.3s;
+    }
+    img{
+        width: 20px;
+        
+    }
+}

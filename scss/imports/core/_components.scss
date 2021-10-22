@@ -1,0 +1,34 @@
+// css components
+.btnHeader{
+    display: inline-flex;
+    justify-content: center;
+    align-self: center;
+    color: $grey-cl;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #c1c1c1;
+    padding: 8px 15px;
+    border-radius: 3px;
+    &:hover{
+        background-color: #ececec;
+    }
+}
+
+.news{
+    .tieude{
+        font-weight: bold;
+        color: $black-cl;
+        text-decoration: none;
+        &:hover{
+            color: $hover-text;
+        }
+    }
+    .mota{
+        padding-top: 10px;
+        font-size: 14px;
+        color: $black-cl;
+        line-height: 20px;
+        text-decoration: none;
+        @include overtext(5);
+    }
+}

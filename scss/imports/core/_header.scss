@@ -1,0 +1,199 @@
+// css header
+header{
+    .slider{
+        height: 270px;
+        width: 100%;
+        position: relative;
+        .slider__wrap{
+            height: 100%;
+            width: 100%;
+            .img-banner{
+                height: 270px;
+                width: 100%;
+                img{
+                    object-fit: cover;
+                    @include mid();
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .header__logo{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ececec;
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h1{
+                overflow: hidden;
+            }
+            span{
+                font-size: 14px;
+                color: $grey-cl;
+                &::before{
+                    content: '';
+                    background-color: $grey-cl;
+                    width: 1px;
+                    height: 20px;
+                    position: absolute;
+                    display: block;
+                    margin-left: -5px;
+                }
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .btnMoinhat{
+                    img{
+                        width: 17px;
+                        margin-right: 5px;
+                    }
+                }
+                .btnInternational{
+                    margin-left: 15px;
+                    img{
+                        width: 17px;
+                        margin-right: 5px;
+                    }
+                }
+                .btnSearch{
+                    position: relative;
+                    margin-left: 40px;
+                    input{
+                        border: 1px solid #ddd;
+                        border-radius: 68px;
+                        height: 34px;
+                        width: 150px;
+                        padding: 0 20px 0 14px;
+                        font-size: 14px;
+                        color: $grey-cl;
+                    }
+                    img{
+                        width: 17px;
+                        position: absolute;
+                        right: 16px;
+                        top: 8px;
+                    }
+                    &::before{
+                        content: '';
+                        background-color: #c1c1c1;
+                        width: 1px;
+                        height: 33px;
+                        position: absolute;
+                        display: block;
+                        margin-left: -15px;
+                    }
+                }
+                .btnLogin{
+                    display: inline-flex;
+                    justify-content: center;
+                    align-self: center;
+                    color: $grey-cl;
+                    font-size: 14px;
+                    text-decoration: none;
+                    margin-left: 20px;
+                    &:hover{
+                        color: #562af3;
+                    }
+                    img{
+                        margin-right: 5px;
+                        width: 17px;
+                    }
+                }
+            }
+        }
+    }
+    .header__menu{
+        height: 50px;
+        border-bottom: 1px solid #ececec;
+        .container-fluid{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .header__menu-item{
+                height: 100%;
+                font-weight: 600;
+                color: $textmenu-cl;
+                font-size: 14px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .item{
+                    text-decoration: none;
+                    color: $textmenu-cl;
+                    &:hover{
+                        .item{
+                            color: $hover-text;
+                        }
+                    }
+                }
+                .option{
+                    display: none;
+                    width: 160px;
+                    height: auto;
+                    border-top: 1px solid $hover-text;
+                    top: 50px;
+                    left: 0;
+                    background-color: $white-cl;
+                    -webkit-box-shadow: 1px 4px 6px 0px rgba(170,173,164,0.77); 
+                    box-shadow: 1px 4px 6px 0px rgba(170,173,164,0.77);
+                    position: absolute;
+                    z-index: 10;
+                    li{
+                        padding: 8px 0 8px 15px;
+                        font-weight: normal;
+                        color: $black-cl;
+                        a{
+                            text-decoration: none;
+                            color: $black-cl;
+                        }
+                        &:hover{
+                            a{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    .item{
+                        color: $hover-text;
+                    }
+                    .option{
+                        display:block;
+                    }
+                }
+                
+            }
+            .btnHome{
+                img{
+                    width: 17px;
+                }
+            }
+            .all{
+                display: flex;
+                align-items: center;
+                a{
+                    color: #c1c1c1;
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+                .btnMenu{
+                    padding-left: 5px;
+                    .line{
+                        background-color: #c1c1c1;
+                        height: 2px;
+                        width: 18px;
+                        margin: 4px 0;
+                    }
+                }
+            }
+        }
+    }
+}

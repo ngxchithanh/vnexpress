@@ -1,0 +1,130 @@
+// css footer
+footer{ 
+    .container{
+        .lineTop{
+            background-color: #c1c1c1;
+            height: 4px;
+            width: 100%;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+        .footer__top{
+            // border-top: 4px solid #c1c1c1;
+            display: flex;
+            justify-content: space-between;
+            ul{
+                padding: 0 15px 15px 0;
+                &:first-child{
+                    .line{
+                        background-color: #c1c1c1;
+                        height: 1px;
+                        width: 100px;
+                        margin-bottom: 15px;
+                    }
+                    li{
+                        font-weight: 600;
+                    }
+                }
+                li{
+                    font-size: 14px;
+                    padding-bottom: 15px;
+                    a{
+                        color: $black-cl;
+                        text-decoration: none;
+                    }
+                    &:hover{
+                        a{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .footer__top-raovat{
+                border-left: 1px solid #c1c1c1;
+                padding-left: 15px;
+            }
+            .footer__top-contact{
+                border-left: 1px solid #c1c1c1;
+                padding-left: 15px;
+                .contact{
+                    display: flex;
+                    align-items: center;
+                    color: $black-cl;
+                    font-size: 14px;
+                    text-decoration: none;
+                    padding-bottom: 10px;
+                    &:hover{
+                        color: #562af3;
+                    }
+                }
+                .duongdaynong{
+                    padding-top: 15px;
+                    border-top: 1px solid #c1c1c1;
+                }
+                .diachiContact{
+                    display: flex;
+                    justify-content: space-between;
+                    .hn{
+                        p{
+                            &:first-child{
+                                font-weight: 600;
+                                font-size: 16px;
+                            }
+                            &:last-child{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                p{
+                    padding-bottom: 10px;
+                    font-size: 14px;
+                    color: $black-cl;
+                }
+                img{
+                    width: 17px;
+                    padding-right: 5px;
+                }
+            }
+        }
+        .footer__bottom{
+            margin-top: 15px;
+            border-top: 1px solid #c1c1c1;
+            .top{
+                padding-top: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .footer__bottom-social{
+                    display: flex;
+                    align-items: center;
+                    p{
+                        color: $black-cl;
+                        font-size: 14px;
+                    }
+                    a{
+                        padding: 0 5px;
+                        img{
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+            .bot{
+                margin: 20px 0;
+                .col-md-4{
+                    padding-left: 0;
+                    padding-right: 0;
+                    &:last-child{
+                        text-align: right;
+                    }
+                    p{
+                        color: $black-cl;
+                        font-size: 14px;
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
